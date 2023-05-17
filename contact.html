@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- ini code untuk style.css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ini script untuk jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- ini script untuk fontawesome -->
+	<script
+        src="https://kit.fontawesome.com/f90068558c.js"
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <main>
+        <div class="contact-container">
+            <div class="ilustration1">
+                <img src="assets/images/undraw_Personal_text_re_vqj3.png" width="400px">
+            </div>
+
+            <div class="contact">
+                <img src="assets/images/profile-picture.jpg" alt="profile-picture" class="profile-contact-img">
+                <h1>Contact Me</h1>
+                <p>Please feel free to contact me</p>
+                <h4>Your Information</h4>
+                
+                
+                <form autocomplete="off"  method="post" action="https://formsubmit.co/wika.dhammayanti@gmail.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" class="next">
+                    <div class="form-container">
+                        <!-- kolom input name -->
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" class="input-item" name="name" id="name" placeholder=" " required>
+                                <label for="name" class="form-label">Name</label>
+                            </div>
+                        </div>
+
+                        <!-- kolom input city -->
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" class="input-item" id="city" placeholder=" ">
+                                <label for="city" class="form-label">City</label>
+                            </div>
+                        </div>
+
+                        <!-- kolom input Email -->
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="far fa-envelope-open"></i>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" class="input-item" name="email" id="email" placeholder=" " required>
+                                <label for="email" class="form-label">Email</label>
+                            </div>
+                        </div>
+
+                        <!-- kolom input message -->
+                        <div class="textarea-container">
+                            <div class="icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="form-textarea">
+                                <textarea name="message" id="message" cols="52" rows="8" placeholder=" " class="textarea" required></textarea>
+                                <label for="message" class="form-label">Message</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="submit" class="submit">
+                </form>
+            </div>
+
+            <div class="ilustration2">
+                <img src="assets/images/undraw_Contact_us_re_4qqt.png" width="400px">
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="div-footer">
+            <p>Designed & Built by Ida Ayu Ketut Wika Dhammayanti</p>
+            <p class="info-center">Copyright &copy; 2023.
+                All rights reserved
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

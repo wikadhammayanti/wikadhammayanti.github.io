@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wika Dhammayanti - Data Analyst</title>
+    <!-- ini code untuk style.css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ini script untuk jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- ini script untuk fontawesome -->
+	<script
+        src="https://kit.fontawesome.com/f90068558c.js"
+        crossorigin="anonymous">
+    </script>
+    <!-- Sos Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="header">
+            <!-- <img src="" alt=""> -->
+            <nav>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#achievement">Achievement</a>
+                <a href="contact.html" target="_blank" class="a-contact">Contact</a>
+            </nav>
+            <span class="underline-title"></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="medsos">
+            <a href="https://github.com/wikaDH" target="_blank">
+                <i class="fab fa-github" title="GitHub"></i>
+            </a>
+
+            <a href="https://www.novypro.com/profile_projects/wikadhammayanti" target="_blank">
+                <p class="novypro" title="novyPro">N</p>
+            </a>
+
+            <a href="https://www.kaggle.com/wikadhammayanti" target="_blank">
+                <i class="fab fa-kaggle" title="kaggle"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/wika-dhammayanti-386ab5113" target="_blank">
+                <i class="fab fa-linkedin-in" title="LinkedIn"></i>
+            </a>
+
+            <a href="" target="_blank">
+                <i class="fa fa-instagram" title="instagram"></i>
+            </a>
+
+            <a href="" class="a-icon" target="_blank">
+                <i class="fab fa-twitter" title="Twitter"></i>
+            </a>
+
+        </div>
+        
+        <div class="gmail">
+            <a href="contact.html" target="_blank" class="a-gmail">wika.dhammayanti@gmail.com</a>
+        </div>
+
+        <!-- section about me  -->
+        <section class="section-about-me" id="about">
+            <div class="div-about-me">
+                <h1>Wika Dhammayanti</h1>
+                <!-- <h1>Dhammayanti</h1> -->
+                <p style="font-size: 35px;">Data Analyst</p>
+                <p>Hey there! Welcome to my portfolio website. I'm a naturally curious and driven individual with a background in education and customer service as a Guest Service Executive in the hotel industry. But these days, I'm super excited to pursue my passion for data analysis as a career! With my recent completion of the Google Analytics Professional Certificate and further training in data analysis, I've developed a solid foundation in data analysis tools and techniques. I love using data to tell stories and uncover hidden insights that can help organizations succeed. As a former teacher, I've honed my critical thinking and analytical skills, as well as my ability to work with data sets and derive insight from them. Plus, my experience in customer service has given me excellent communication and collaboration skills. I'm always eager to learn and grow, and I can't wait to apply my skills and experience to a data analyst role. Thanks for stopping by, and let's connect soon!</p>
+            </div>
+            <img src="assets/images/profile-picture.jpg" alt="profile picture" class="profile-picture">
+        </section>
+
+        <section class="section-portfolio" id="portfolio">
+            <div class="div1-title-portfolio">
+                <div class="div2-title-portfolio">
+                    <p>DATA ANALYSIS AND VISUALIZATION</p>
+                    <h1>Portfolio</h1>
+                </div>
+                <p>Check out some of the case studies I made as a Data Analyst.</p>
+            </div>
+
+            <div id="wrapper">
+                <div class="tabs">
+                    <input type="radio" name="tab-name" id="tab-1" checked>
+                    <label for="tab-1" class="tab-control tab1">Excel</label>
+
+                    <input type="radio" name="tab-name" id="tab-2" checked>
+                    <label for="tab-2" class="tab-control">SQL</label>
+                    
+                    <input type="radio" name="tab-name" id="tab-3" checked>
+                    <label for="tab-3" class="tab-control">Power BI</label>
+
+                    <input type="radio" name="tab-name" id="tab-4" checked>
+                    <label for="tab-4" class="tab-control">Python</label>
+
+                    <input type="radio" name="tab-name" id="tab-5" checked>
+                    <label for="tab-5" class="tab-control">R</label>
+
+                    <input type="radio" name="tab-name" id="tab-6" checked>
+                    <label for="tab-6" class="tab-control">SPSS/JASP</label>
+
+                    <div class="tab-content">
+                        <div id="tab-panel-1" class="tab-panel">
+                            <div class="div-power-bi">
+                                <div class="div-power-bi-content">
+                                    <img src="assets/images/excel portfolio.jpg" alt="image EXCEL 1">
+                                    <div class="div-excel-portfolio-description">
+                                        <h1 class="h1-excel-portfolio">NHSTA DASHBOARD 2021</h1>
+                                        <p style="text-align: justify;">
+                                            Based on these findings, it is recommended that authorities focus their efforts on reducing accidents in urban areas, particularly during peak hours. 
+                                            Additionally, it is essential to raise awareness on the dangers of drunk driving and enforce strict DUI laws to reduce the number of accidents caused 
+                                            by impaired drivers.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab-panel-2" class="tab-panel">
+                            <div class="excel-content">
+                                <div class="div-excel-content">
+                                    <div class="python-portfolio-image">
+                                        <img src="assets/images/SQL1.jpg" alt="image python 2">
+                                        <img src="assets/images/SQL2.jpg" alt="image python 3">
+                                    </div>
+                                    <h1>Total Sales by User with Sales Decrease Filter</h1>
+                                    <p class="python-portfolio-p">
+                                        This report describes a SQL query that was used to retrieve total sales data for users in a flight dataset, 
+                                with a filter applied to identify users with sales that decreased by a certain amount each year.
+                                
+                                The query was constructed using several clauses, including SELECT, FROM, INNER JOIN, GROUP BY, and HAVING. 
+                                The SELECT clause was used to retrieve the user ID and name, as well as the total sales data for each year from 2020 to 2023. 
+                                The FROM clause specified the flight dataset table, and the INNER JOIN clause was used to join the user dataset table to retrieve user names. 
+                                The GROUP BY clause was used to group the data by user ID and name. 
+                                Finally, the HAVING clause was used to filter the data to identify users with sales that decreased by at least 10,000 each year.
+                                
+                                The query returned a list of users who met the specified criteria, along with their total sales data for each year. 
+                                The list was ordered by user ID.
+                                
+                                Based on the results of this query, it is recommended that further investigation be conducted into the sales trends for the users identified by the filter. 
+                                This may involve examining factors such as pricing, competition, and customer behavior to determine the cause of the sales decrease. 
+                                It may also be helpful to conduct additional queries or analyses to gain more insight into the data.
+                                
+                                In conclusion, the SQL query described in this report was used to retrieve total sales data for users in a flight dataset, 
+                                with a filter applied to identify users with sales that decreased by a certain amount each year. 
+                                The results of the query can be used to inform further analysis and decision-making related to the sales trends for these users.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                            <!-- <img src="assets/images/SQL1.jpg" alt="image SQL1">
+                            <img src="assets/images/SQL2.jpg" alt="image SQL2">
+                            <h1>Total Sales by User with Sales Decrease Filter</h1>
+                            <p>
+                                This report describes a SQL query that was used to retrieve total sales data for users in a flight dataset, 
+                                with a filter applied to identify users with sales that decreased by a certain amount each year.
+                                
+                                The query was constructed using several clauses, including SELECT, FROM, INNER JOIN, GROUP BY, and HAVING. 
+                                The SELECT clause was used to retrieve the user ID and name, as well as the total sales data for each year from 2020 to 2023. 
+                                The FROM clause specified the flight dataset table, and the INNER JOIN clause was used to join the user dataset table to retrieve user names. 
+                                The GROUP BY clause was used to group the data by user ID and name. 
+                                Finally, the HAVING clause was used to filter the data to identify users with sales that decreased by at least 10,000 each year.
+                                
+                                The query returned a list of users who met the specified criteria, along with their total sales data for each year. 
+                                The list was ordered by user ID.
+                                
+                                Based on the results of this query, it is recommended that further investigation be conducted into the sales trends for the users identified by the filter. 
+                                This may involve examining factors such as pricing, competition, and customer behavior to determine the cause of the sales decrease. 
+                                It may also be helpful to conduct additional queries or analyses to gain more insight into the data.
+                                
+                                In conclusion, the SQL query described in this report was used to retrieve total sales data for users in a flight dataset, 
+                                with a filter applied to identify users with sales that decreased by a certain amount each year. 
+                                The results of the query can be used to inform further analysis and decision-making related to the sales trends for these users.
+                            </p> -->
+                        </div>
+                        
+                        <div id="tab-panel-3" class="tab-panel">
+                            <div class="div-power-bi">
+                                <div class="div-excel-content">
+                                    <div class="python-portfolio-image">
+                                        <img src="assets/images/POWER BI1.jpg" alt="image python 2">
+                                        <img src="assets/images/POWER BI2.jpg" alt="image python 3">
+                                        <img src="assets/images/POWER BI3.jpg" alt="image python 4">
+                                        <img src="assets/images/POWER BI4.jpg" alt="image python 5">
+                                    </div>
+                                    <p class="power-bi-portfolio-p">
+                                        Overall, these reports provide valuable insights into the sales performance of the business, highlighting areas of strength and weakness. By analyzing these reports and taking action on the insights gained, the business can optimize its operations and drive growth.
+                                    </p>
+                                    <p class="p-link-power-bi">
+                                        For complete project, <a href="https://www.novypro.com/project/restaurant-report" class="link-project-power-bi" target="_blank">click here</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab-panel-4" class="tab-panel">
+                            <div class="excel-content">
+                                <div class="div-excel-content">
+                                    <div class="python-portfolio-image">
+                                        <img src="assets/images/PYTHON2.jpg" alt="image python 2">
+                                        <img src="assets/images/PYTHON3.jpg" alt="image python 3">
+                                        <img src="assets/images/PYTHON4.jpg" alt="image python 4">
+                                        <img src="assets/images/PYTHON5.jpg" alt="image python 5">
+                                    </div>
+                                    <img src="assets/images/PYTHON1.jpg" alt="image python 1" style="margin-left: 300px; margin-top: 5px;">
+                                    <h1>HR Dataset Analysis</h1>
+                                    <p class="python-portfolio-p">
+                                        The data analysis revealed that there is a weak positive correlation between salary and performance score, 
+                                        indicating that as the salary increases, there is a slight increase in performance score. 
+                                        However, the scatter plot showed heteroscedasticity, suggesting that the results may be unreliable for prediction.
+                                        
+                                        Further analysis showed that there is a gender-based performance difference in employees that varies by marital status. 
+                                        On average, female employees have a higher performance score compared to male employees. However, for married employees, 
+                                        divorced employees, and widowed employees, the average performance score is higher for males than females. 
+                                        For separated employees, the average performance score is higher for males than females. For single employees, 
+                                        the average performance score is higher for females than males. 
+                                        These findings suggest that there may be certain factors associated with marital status that could influence 
+                                        the performance of employees differently based on their gender.
+                                        
+                                        Based on these findings, it is recommended that the company investigate and understand these factors to potentially reduce any biases 
+                                        and ensure a fair and equal working environment for all employees. 
+                                        Additionally, the company should focus on optimizing their recruitment strategy to attract high-quality candidates. 
+                                        LinkedIn and Google search were identified as the top two sources for attracting top talent, 
+                                        and the company can consider investing more in these sources. The company can also encourage employee referrals 
+                                        and increase the referral bonus to attract more high-quality referrals. 
+                                        Finally, attending more diversity job fairs can increase the pool of diverse candidates for the company.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab-panel-5" class="tab-panel">
+                            <div class="div-power-bi">
+                                <div class="div-excel-content">
+                                    <div class="python-portfolio-image">
+                                        <img src="assets/images/R1.jpg" alt="image python 2">
+                                        <img src="assets/images/R2.jpg" alt="image python 3">
+                                        <img src="assets/images/R3.jpg" alt="image python 4">
+                                        <img src="assets/images/R4.jpg" alt="image python 5">
+                                    </div>
+                                    <p class="power-bi-portfolio-p">
+                                        We can see that Fiction book is 44% and Non Fiction is 56%. From 2009 to 2019 the review is increased. The highest number of people to give a good rating from 4.5 to 4.9 is in the Non Fiction book. In each year the produced of Non Fiction book is higher than Fiction book. And there is no linear relationship between price and rating, means that higher price does not result higher rating in Fiction and Non Fiction book.
+                                    </p>
+                                    <p class="p-link-power-bi">
+                                        For complete project, <a href="https://rpubs.com/wikaDH/990165" class="link-project-power-bi" target="_blank">click here</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab-panel-6" class="tab-panel">
+                            <div class="div-power-bi">
+                                <div class="div-excel-content">
+                                    <div class="python-portfolio-image">
+                                        <img src="assets/images/1 SPSS.jpg" alt="image python 2">
+                                        <img src="assets/images/2 SPSS.jpg" alt="image python 3">
+                                        <img src="assets/images/3 SPSS.jpg" alt="image python 4">
+                                        <img src="assets/images/4 SPSS.jpg" alt="image python 5">
+                                        <img src="assets/images/5 SPSS.jpg" alt="image python 5">
+                                        <img src="assets/images/6 SPSS.jpg" alt="image python 5">
+                                    </div>
+                                    <p class="power-bi-portfolio-p">
+                                        In conclusion, the report provides an overview of the different statistical concepts related to linear regression, including residuals, R2, ANOVA, homoscedasticity, and hypothesis testing. The report demonstrated the application of these concepts in the context of predicting baby length with mother's height, comparing head circumference for babies of smoking mothers and non-smoking mothers, and exploring the relationship between mother's age and baby's weight.
+                                    </p>
+                                    <!-- <p class="p-link-power-bi">
+                                        For more Power BI project, <a href="https://novypro.com/project/wikadhammayanti" class="link-project-power-bi" target="_blank">click here</a>
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-achievement" id="achievement">
+            <div class="certificate-container">
+                <h1 class="h1-achievement">Achievement</h1>
+                <div class="certificate-content2">
+                    <div class="certificate-image2">
+                        <img src="assets/images/Brainnest Data Analysis.jpg" alt="">
+                    </div>
+                    <div class="certificate-description2">
+                        <h1 class="certificate-title">Brainnest Data Analysis</h1>
+                        <h2>14 May 2023</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti, distinctio necessitatibus maiores nam sunt, nesciunt ab architecto consequuntur quos at cum non vel laudantium soluta fugit voluptatibus repudiandae rerum.</p>
+                        <!-- <div class="div-link-certificate2">
+                            <i class="fas fa-arrow-right l1"></i>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EACCXEULXC58" target="_blank" class="link-certificate">View Certificate</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="certificate-content1">
+                    <div class="certificate-image1">
+                        <img src="assets/images/Data analytics course.jpg" alt="" style="width: 350px; height: 450px;">
+                    </div>
+                    <div class="certificate-description1">
+                        <h1 class="certificate-title">Data Analytics Course</h1>
+                        <h2>14 December 2022</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti, distinctio necessitatibus maiores nam sunt, nesciunt ab architecto consequuntur quos at cum non vel laudantium soluta fugit voluptatibus repudiandae rerum.</p>
+                        <!-- <div class="div-link-certificate1">
+                            <i class="fas fa-arrow-left l1"></i>
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/QTD2TGCPD2CP" target="_blank" class="link-certificate">View Certificate</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="certificate-content2">
+                    <div class="certificate-image2">
+                        <img src="assets/images/data analysis certificate.jpg" alt="">
+                    </div>
+                    <div class="certificate-description2">
+                        <h1 class="certificate-title">Data Analysis With R Programming</h1>
+                        <h2>24 December 2022</h2>
+                        <p>To earn this certificate, I showcased my expertise in diverse data manipulation, visualization, and modeling tasks using R, while successfully completing the comprehensive coursework. Through engaging hands-on exercises and projects, I demonstrated my adeptness in applying these techniques to real-world datasets, generating insightful and impactful results. By effectively navigating through the intricacies of data analysis, I solidified my proficiency in R and honed my ability to extract meaningful insights from complex data sets.</p>
+                        <div class="div-link-certificate2">
+                            <i class="fas fa-arrow-right l1"></i>
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/QTD2TGCPD2CP" target="_blank" class="link-certificate">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-content1">
+                    <div class="certificate-image1">
+                        <img src="assets/images/google finance data analyst certificate.jpg" alt="">
+                    </div>
+                    <div class="certificate-description1">
+                        <h1 class="certificate-title">Google Finance Data Analyst Professional Certificate</h1>
+                        <h2>25 December 2022</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti, distinctio necessitatibus maiores nam sunt, nesciunt ab architecto consequuntur quos at cum non vel laudantium soluta fugit voluptatibus repudiandae rerum.</p>
+                        <div class="div-link-certificate1">
+                            <i class="fas fa-arrow-left l1"></i>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/N93ZP7PGNKRV" target="_blank" class="link-certificate">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-content2">
+                    <div class="certificate-image2">
+                        <img src="assets/images/google data analytics certificate.jpg" alt="">
+                    </div>
+                    <div class="certificate-description2">
+                        <h1 class="certificate-title">Google Data Analytics</h1>
+                        <h2>25 December 2022</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti, distinctio necessitatibus maiores nam sunt, nesciunt ab architecto consequuntur quos at cum non vel laudantium soluta fugit voluptatibus repudiandae rerum.</p>
+                        <div class="div-link-certificate2">
+                            <i class="fas fa-arrow-right l1"></i>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EACCXEULXC58" target="_blank" class="link-certificate">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-content1 certificate">
+                    <div class="certificate-image1">
+                        <img src="assets/images/hackerrank certificate.jpg" alt="">
+                    </div>
+                    <div class="certificate-description1">
+                        <h1 class="certificate-title">HackerRank Certificate</h1>
+                        <h2>09 December 2022</h2>
+                        <p>To earn this certificate, I engaged in a series of timed tests that consisted of challenging questions requiring me to provide SQL queries and statements. These tests evaluated my ability to think quickly and efficiently in SQL, adding a sense of pressure to assess my proficiency. By answering the questions within the given time constraints, I demonstrated my intermediate-level competency in SQL, showcasing my understanding of fundamental database concepts, proficient querying of data, manipulation of tables, and execution of advanced operations like joins, subqueries, and aggregations. This certification serves as a testament to my aptitude in SQL and my capacity to effectively apply it to overcome time-sensitive real-world database challenges.</p>
+                        <div class="div-link-certificate1">
+                            <i class="fas fa-arrow-left l1"></i>
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/QTD2TGCPD2CP" target="_blank" class="link-certificate">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contact">
+            <div class="div-contact-main">
+                <h2>What's Next?</h2>
+                <h1>Contact Me</h1>
+                <p>"Thanks for checking out my portfolio website! If you'd like to get in touch, I'd love to hear from you. Just fill out the contact form below and I'll get back to you within 24-48 hours during business days. Whether you have a question, want to say hi, or are interested in exploring potential opportunities, my inbox is always open. I'm excited to connect with like-minded individuals and organizations who share my passion for data analysis and uncovering hidden insights. So don't hesitate to reach out, and let's chat soon!"</p>
+                <a href="contact.html" target="_blank" class="">
+                    Say Something
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="div-footer">
+            <p>Designed & Built by Ida Ayu Ketut Wika Dhammayanti</p>
+            <p class="info-center">Copyright &copy; 2023.
+                All rights reserved
+            </p>
+        </div>
+    </footer>
+
+    <!-- js  -->
+    <script src="script.js"></script>
+    <!-- Sos Library -->
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

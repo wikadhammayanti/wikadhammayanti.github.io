@@ -1,0 +1,834 @@
+/* ----------HTML---------- */
+
+* {
+    color: white;
+}
+
+body {
+    /* background-color: #1C2833; */
+    background-color: #0a192f;
+    
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+  /* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+}
+
+
+/* ----------header---------- */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 67px;
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+    /* background-color: rgb(46, 45, 45); */
+    /* background-color: #708090; */
+    background-color: #0a192f;
+
+}
+
+/* untuk menyembunyikan header  */
+.header.hide {
+    transform: translateY(-100%);
+}
+
+/* a di navigation  */
+a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 14px 30px 0px;
+    font-weight: bold;
+    font-family: 'roboto mono', sans-serif;
+    font-size: 1.4rem;
+}
+
+/* navigation */
+nav {
+    position: absolute;
+    right: 0;
+    margin: 24px 30px 0px;
+}
+
+/* underline disetiap judul  */
+.underline-title {
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 45rem;
+}
+
+.a-contact {
+    /* border: 1px solid white; */
+    border-radius: 3px;
+    color: black;
+    /* background-color: rgba(0, 183, 255, 0.8); */
+}
+
+.a-contact:hover {
+    background-color: #0a192f;
+    color: white;
+    transition: 0.5s;
+}
+
+.a-contact:not(:hover) {
+    color: #0a192f;
+    /* background-color: rgba(0, 183, 255, 0.8); */
+    background-color: white;
+    transition: 0.5s;
+}
+
+/* ----------main---------- */
+
+/* ----------About me---------- */
+
+/* section about me  */
+.section-about-me {
+    padding: 150px 0 200px 180px;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+/* div about me */
+.div-about-me {
+    margin-right: 150px;
+}
+
+/* h1 about me  */
+.div-about-me h1 {
+    font-size: 80px;
+    margin: 20px 0 0 0;
+}
+
+/* p about me  */
+.section-about-me p {
+    max-width: 600px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 24px;
+}
+
+/* image profile picture  */
+.profile-picture {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    margin-top: 40px;
+}
+
+/* ----------Portfolio---------- */
+
+/* section portfolio  */
+.section-portfolio {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 100px 0px;
+}
+
+/* div pertama title di portfolio  */
+.div1-title-portfolio {
+    margin-left: 300px;
+    display: flex;
+}
+
+/* div kedua title di portfolio  */
+.div2-title-portfolio ~ p {
+    margin-top: 60px;
+}
+
+/* h1 di div kedua title portfolio  */
+.div2-title-portfolio h1 {
+    font-size: 50px;
+}
+
+/* div kedua di title portfolio  */
+.div2-title-portfolio {
+    margin-right: 200px;
+}
+
+/* id wrapper  */
+#wrapper {
+    display: flex;
+    /* align-items: center; */
+    /* height: 100vh; */
+    /* max-width: 45rem; */
+
+    /* max-width: 850px; */
+    
+    /* margin: 0 auto; */
+
+    margin-top: 0px;
+    padding: 20px;
+
+    /* margin-left: 160px; */
+}
+
+/* div tabs keseluruhan untuk portfolio  */
+.tabs {
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    /* border-radius: 0.5rem; */
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); */
+}
+
+/* tabs untuk memilih jenis portfolio */
+.tab-control {
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    font-size: 1.25rem;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: grey;
+    /* border-radius: 4px; */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    /* margin: 0px; */
+}
+
+/* tab pertama  */
+.tab1{
+    margin-left: 500px;
+}
+
+/* tab control ketika di hover  */
+.tab-control:hover {
+    color: black;
+    background-color: white;
+}
+
+/* content dari tab  */
+/* .tab-content {
+    border-top: 1px solid blue;
+    padding: 1rem;
+} */
+
+/* tab panel  */
+.tab-panel {
+    display: none;
+    width: 1480px;
+    /* border: 1px solid red; */
+}
+
+/* image dari tab panel  */
+.tab-panel img {
+    width: 470px;
+    height: 270px;
+    border: 10px solid grey;
+    margin-right: 40px;
+}
+
+/* h1 di tab panel  */
+.tab-panel h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* input saya hilangkan  */
+input[type=radio] {
+    /* visibility: hidden; */
+    display: none;
+}
+
+
+
+.excel-content,
+.div-power-bi {
+    background-color: #112240;
+    padding: 40px;
+    max-width: 1100px;
+    margin-left: 160px;
+    border-radius: 4px;
+}
+
+.div-excel-content {
+    background-color: rgb(7, 17, 36);
+    border-radius: 6px;
+    padding: 30px 30px 30px 30px;
+}
+
+.h1-excel-portfolio {
+    text-align: left;
+}
+
+
+
+
+
+
+
+.python-portfolio-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.python-portfolio-image img {
+    margin: 0 10px 15px 10px;
+}
+
+.python-portfolio-p {
+    max-width: 900px;
+    text-align: justify;
+    margin-left: 80px;
+}
+
+/* ----------Power Bi portfolio---------- */
+
+
+/* div power bi  */
+
+/* .div-power-bi {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 140px;
+} */
+
+/* div power bi content  */
+.div-power-bi-content {
+    /* margin: 75px; */
+    margin-bottom: 35px;
+    display: flex;
+    /* background-color: rgb(11, 22, 46); */
+    background-color: rgb(7, 17, 36);
+
+    border-radius: 6px;
+    padding: 30px 30px 30px 30px;
+}
+
+/* p di div power bi content  */
+
+/* .div-power-bi-content p {
+    margin-bottom: 1rem;
+
+    font-size: 17px;
+    text-align: justify;
+    line-height: 25px;
+
+    width: 800px;
+
+    width: auto;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin-top: 0px;
+    text-indent: 40px;
+} */
+
+.power-bi-portfolio-p {
+    max-width: 610px;
+    text-align: justify;
+    margin-left: 230px;
+}
+
+
+/* div kesimpulan power bi  */
+.div-kesimpulan-power-bi {
+    background-color: rgb(7, 17, 36);
+    border-radius: 6px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 330px;
+}
+
+/* p kesimpulan power bi  */
+.p-kesimpulan-power-bi {
+    text-align: center;
+    max-width: 600px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* link portfolio power bi  */
+.link-project-power-bi {
+    font-size: 13px;
+    color: blue;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
+}
+
+.p-link-power-bi {
+    margin: 30px 0 0 430px;
+}
+
+/* ketika input type radio di cheked lalu akan terjadi pada tab control  */
+input[type=radio]:checked+.tab-control {
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    /* border-bottom-color: #3565ff; */
+}
+
+/* tab pertama di checked lalu tab panel pertama yang ada didalam tab content  */
+#tab-1:checked~.tab-content>#tab-panel-1 {
+    display: block;
+}
+
+/* tab kedua di checked lalu tab panel kedua yang ada didalam tab content  */
+#tab-2:checked~.tab-content>#tab-panel-2 {
+    display: block;
+}
+
+/* tab ketiga di checked lalu tab panel ketiga yang ada didalam tab content  */
+#tab-3:checked~.tab-content>#tab-panel-3 {
+    display: block;
+}
+
+/* tab keempat di checked lalu tab panel keempat yang ada didalam tab content  */
+#tab-4:checked~.tab-content>#tab-panel-4 {
+    display: block;
+}
+
+/* tab kelima di checked lalu tab panel kelima yang ada didalam tab content  */
+#tab-5:checked~.tab-content>#tab-panel-5 {
+    display: block;
+}
+
+/* tab keenam di checked lalu tab panel kedua yang ada didalam tab content  */
+#tab-6:checked~.tab-content>#tab-panel-6 {
+    display: block;
+}
+
+/* ----------Achievement---------- */
+
+.section-achievement {
+    padding: 100px 0 100px 0px;
+}
+
+.certificate-title {
+    font-size: 35px;
+    margin: 0;
+}
+
+.certificate-content1 {
+    display: flex;
+    /* border: 1px solid red; */
+    /* padding-left: 100px; */
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.h1-achievement {
+    margin-left: 300px;
+    font-size: 50px;
+}
+
+.certificate-image1 {
+    margin-right: 40px;
+}
+
+.certificate-image1 img {
+    width: 450px;
+    height: 350px;
+    border-radius: 4px;
+}
+
+.certificate-description1 {
+    text-align: right;
+    max-width: 500px;
+    /* margin-top: 60px; */
+    /* border: 1px solid blue; */
+}
+
+
+
+.certificate-content2 {
+    display: flex;
+    flex-direction: row-reverse;
+    /* border: 1px solid red; */
+    /* padding-left: 100px; */
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.certificate-description2 {
+    text-align: left;
+    max-width: 500px;
+    /* margin-top: 60px; */
+    /* border: 1px solid blue; */
+}
+
+.certificate-image2 {
+    margin-left: 40px;
+}
+
+.certificate-image2 img {
+    width: 450px;
+    height: 350px;
+    border-radius: 4px;
+}
+
+
+
+
+
+.div-link-certificate1 {
+    margin-top: 30px;
+    width: 140px;
+    margin-left: 360px;
+    /* border: 1px solid blue; */
+}
+
+.div-link-certificate2 {
+    margin-top: 30px;
+    width: 140px;
+    /* border: 1px solid red; */
+}
+
+.fa-arrow-right {
+    font-size: 17px;
+    margin-right: 10px;
+    position: absolute;
+    left: 230px;
+    transition-duration: 2s;
+}
+
+.fa-arrow-left {
+    font-size: 17px;
+    margin-right: 10px;
+    position: absolute;
+    right: 230px;
+    transition-duration: 2s;
+}
+
+.link-certificate {
+    margin: 0;
+    font-size: 18px;
+    padding: 0;
+}
+
+.div-link-certificate1:hover .fa-arrow-left {
+    margin-right: 180px;
+    font-size: 20px;
+}
+
+.div-link-certificate2:hover .fa-arrow-right {
+    margin-left: 180px;
+    font-size: 20px;
+}
+
+.l1 {
+    transition-timing-function: cubic-bezier(0.42, 0, 0.03, 1.04);
+}
+
+/* ----------medsos---------- */
+
+.medsos {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    position: fixed;
+    left: 30px;
+    top: 70px;
+}
+
+.gmail {
+    position: fixed;
+    right: -150px;
+    top: 385px;
+    transform: rotate(90deg);
+}
+
+.a-gmail {
+    color: grey;
+    font-size: 20px;
+}
+
+.a-gmail:hover {
+    color: rgb(0, 183, 255);
+}
+
+.fa-github,
+.novypro,
+.fa-instagram,
+.fa-kaggle,
+.fa-linkedin-in,
+.fa-twitter {
+    margin: 20px;
+}
+
+.novypro {
+    font-size: 25px;
+}
+
+a .fa-github:hover {
+    color: rgb(0, 183, 255);
+}
+
+.fa-codepen:hover {
+    color: rgb(0, 183, 255);
+}
+
+.fa-instagram:hover {
+    color: rgb(0, 183, 255);
+}
+
+.fa-kaggle:hover {
+    color: rgb(0, 183, 255);
+}
+
+.fa-twitter:hover {
+    color: rgb(0, 183, 255);
+}
+
+.fa-linkedin-in:hover {
+    color: rgb(0, 183, 255);
+}
+
+.novypro:hover {
+    color: rgb(0, 183, 255);
+}
+
+
+
+/* ----------Contact---------- */
+
+/* contact container  */
+.contact-container {
+    display: flex;
+    justify-content: flex-start;
+    /* flex-direction: row-reverse; */
+    /* margin-top: 100px; */
+    margin-bottom: 50px;
+}
+
+/* contact h1  */
+.contact-h1 {
+    margin-top: 55px ;
+}
+
+/* image besar dikiri  */
+.ilustration1 img {
+    /* margin: 8px; */
+    /* width: 800px; */
+    /* background-color: transparent; */
+    margin-top: 430px;
+    margin-left: 130px;
+    position: fixed;
+    /* margin-right: 60px; */
+}
+
+.ilustration2 img {
+    position: fixed;
+    margin-top: 30px;
+}
+
+/* div contact  */
+.contact {
+    display: inline-block;
+    margin: 10px 30px;
+    text-align: center;
+    /* margin-right: 100px; */
+    padding: 0 0px 0 500px;
+}
+
+.profile-contact-img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+/* tempat form  */
+.form-countainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* tempat untuk input  */
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* icon fontawesome  */
+.icon {
+    margin-right: 6px;
+}
+
+/* fontawesome  */
+.fa-user,
+.fa-map-marker-alt,
+.fa-envelope-open,
+.fa-coment {
+    font-size: 27px;
+}
+
+
+/* CSS for Label  */
+
+
+/* form label  */
+.form-label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+/* CSS fot Input Name,City and Email */
+
+
+/* tempat untuk input  */
+.form-input {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    outline: none;
+    height: 48px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+/* label input  */
+.input-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    height: 100%;
+}
+
+
+/* CSS for Textarea  */
+
+
+/* container textarea  */
+.textarea-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* form textarea  */
+.form-textarea {
+    position: relative;
+}
+
+/* textarea  */
+.textarea {
+    border-style: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    margin-top: 10px;
+    background-color: #0a192f;
+}
+
+
+/* CSS for Submit  */
+
+
+/* submit button  */
+.submit {
+    border-style: none;
+    border-radius: 25px;
+    color: aliceblue;
+    /* background-color: rgb(110, 82, 247); */
+    background-color: #0a192f;
+    margin: 5px;
+    cursor: pointer;
+    padding: 10px 120px;
+    outline: 1px solid grey;
+}
+
+.input-item:focus + .form-label {
+    top: -5px;
+    left: -2px;
+    font-size: 10px;
+}
+
+.textarea:focus + .form-label {
+    top: -5px;
+    left: -2px;
+    font-size: 10px;
+}
+
+.input-item:not(:placeholder-shown).input-item:not(:focus) + .form-label {
+    top: -2px;
+    left: -2px;
+    font-size: 10px;
+    color: rgb(138, 130, 130);
+}
+
+.textarea:not(:placeholder-shown).textarea:not(:focus) + .form-label {
+    top: -2px;
+    left: -2px;
+    font-size: 10px;
+    color: rgb(138, 130, 130);
+}
+
+/* ----------contact di main---------- */
+
+.div-contact-main {
+    padding: 0 0 100px 0;
+}
+
+.div-contact-main p {
+    text-align: justify;
+}
+
+.section-contact {
+    text-align: center;
+}
+
+.section-contact h2 {
+    color: rgb(0, 183, 255);
+    margin: 0 0 0 0;
+}
+
+.section-contact h1 {
+    font-size: 50px;
+    margin: 10px 0 20px 0;
+}
+
+.section-contact p {
+    width: 600px;
+    margin: 0 0 37px 450px;
+}
+
+.section-contact a {
+    border: 1px solid rgb(0, 183, 255);
+    border-radius: 3px;
+    margin: 0 0 50px 0;
+}
+
+/* ----------Footer---------- */
+
+.div-footer {
+    padding: 15px;
+    text-align: center;
+}
+
+.div-footer p {
+    color: grey;
+}
