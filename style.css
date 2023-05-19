@@ -74,7 +74,7 @@ nav {
     position: absolute;
     right: 2rem;
     top: 60px;
-    width: 53rem;
+    width: 54rem;
 }
 
 .a-contact {
@@ -99,6 +99,18 @@ nav {
 
 /* ----------main---------- */
 
+/* ----------home---------- */
+
+.home {
+    padding: 300px 00px 100px 00px;
+    display: flex;
+    justify-content: center;
+}
+
+.home p {
+    max-width: 800px;
+    text-align: center;
+}
 /* ----------About me---------- */
 
 /* section about me  */
