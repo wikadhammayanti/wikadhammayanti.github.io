@@ -127,9 +127,9 @@ nav {
 
 /* h1 about me  */
 .div-about-me h1 {
-    font-size: 50px;
+    font-size: 57px;
     margin: 20px 0 0 0;
-    font-family: 'Syne', serif;
+    font-family: 'Rubik', serif;
 }
 
 /* p about me  */
@@ -171,7 +171,7 @@ nav {
 /* h1 di div kedua title portfolio  */
 .div2-title-portfolio h1 {
     font-size: 50px;
-    font-family: 'Syne', serif;
+    font-family: 'Rubik', serif;
 }
 
 /* div kedua di title portfolio  */
@@ -456,7 +456,7 @@ input[type=radio]:checked+.tab-control {
 .h1-achievement {
     margin-left: 300px;
     font-size: 45px;
-    font-family: 'Syne', serif;
+    font-family: 'Rubik', serif;
 }
 
 .certificate-image1 {
@@ -836,7 +836,7 @@ a .fa-github:hover {
 .section-contact h1 {
     font-size: 35px;
     margin: 10px 0 20px 0;
-    font-family: 'Syne', serif;
+    font-family: 'Rubik', serif;
 }
 
 .section-contact p {
