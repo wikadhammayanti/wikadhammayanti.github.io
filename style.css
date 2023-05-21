@@ -2,6 +2,7 @@
 
 * {
     color: white;
+    font-family: "Oxygen", sans-serif;
 }
 
 body {
@@ -126,8 +127,9 @@ nav {
 
 /* h1 about me  */
 .div-about-me h1 {
-    font-size: 80px;
+    font-size: 50px;
     margin: 20px 0 0 0;
+    font-family: 'Syne', serif;
 }
 
 /* p about me  */
@@ -169,6 +171,7 @@ nav {
 /* h1 di div kedua title portfolio  */
 .div2-title-portfolio h1 {
     font-size: 50px;
+    font-family: 'Syne', serif;
 }
 
 /* div kedua di title portfolio  */
@@ -214,11 +217,12 @@ nav {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     /* margin: 0px; */
+    font-family: 'Roboto', serif;
 }
 
 /* tab pertama  */
 .tab1{
-    margin-left: 500px;
+    margin-left: 480px;
 }
 
 /* tab control ketika di hover  */
@@ -278,8 +282,13 @@ input[type=radio] {
     padding: 30px 30px 30px 30px;
 }
 
+.div-excel-content h1 {
+    font-family: 'Roboto', serif;
+}
+
 .h1-excel-portfolio {
     text-align: left;
+    font-family: 'Roboto', serif;
 }
 
 
@@ -431,6 +440,7 @@ input[type=radio]:checked+.tab-control {
 .certificate-title {
     font-size: 35px;
     margin: 0;
+    font-family: 'Roboto', serif;
 }
 
 .certificate-content1 {
@@ -445,7 +455,8 @@ input[type=radio]:checked+.tab-control {
 
 .h1-achievement {
     margin-left: 300px;
-    font-size: 50px;
+    font-size: 45px;
+    font-family: 'Syne', serif;
 }
 
 .certificate-image1 {
@@ -476,6 +487,11 @@ input[type=radio]:checked+.tab-control {
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.certificate-description1,
+.certificate-description2 h2 {
+    font-family: 'Roboto', serif;
 }
 
 .certificate-description2 {
@@ -556,7 +572,7 @@ input[type=radio]:checked+.tab-control {
     font-size: 25px;
     position: fixed;
     left: 30px;
-    top: 70px;
+    top: 130px;
 }
 
 .gmail {
@@ -818,8 +834,9 @@ a .fa-github:hover {
 }
 
 .section-contact h1 {
-    font-size: 50px;
+    font-size: 35px;
     margin: 10px 0 20px 0;
+    font-family: 'Syne', serif;
 }
 
 .section-contact p {
