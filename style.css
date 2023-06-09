@@ -580,7 +580,7 @@ input[type=radio]:checked+.tab-control {
     font-size: 25px;
     position: fixed;
     left: 30px;
-    top: 100px;
+    top: 101px;
 }
 
 .gmail {
