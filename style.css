@@ -580,7 +580,7 @@ input[type=radio]:checked+.tab-control {
     font-size: 25px;
     position: fixed;
     left: 30px;
-    top: 130px;
+    top: 100px;
 }
 
 .gmail {
@@ -605,7 +605,7 @@ input[type=radio]:checked+.tab-control {
 .fa-kaggle,
 .fa-linkedin-in,
 .fa-twitter {
-    margin: 20px;
+    margin: 10px;
 }
 
 .novypro {
