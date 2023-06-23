@@ -125,6 +125,10 @@ nav {
     margin-right: 150px;
 }
 
+.h1-about-me + p {
+    font-family: 'Roboto',serif;
+}
+
 /* h1 about me  */
 .div-about-me h1 {
     font-size: 57px;
@@ -531,6 +535,7 @@ input[type=radio]:checked+.tab-control {
 }
 
 .div-link-certificate2 {
+    /* border: 1px solid red; */
     margin-top: 30px;
     width: 140px;
     /* border: 1px solid red; */
@@ -542,6 +547,8 @@ input[type=radio]:checked+.tab-control {
     position: absolute;
     left: 230px;
     transition-duration: 2s;
+    /* visibility: hidden; */
+    opacity: 0;
 }
 
 .fa-arrow-left {
@@ -550,6 +557,16 @@ input[type=radio]:checked+.tab-control {
     position: absolute;
     right: 230px;
     transition-duration: 2s;
+    /* visibility: hidden; */
+    opacity: 0;
+}
+
+.fa-arrow-right:hover {
+    cursor: pointer;
+}
+
+.fa-arrow-left:hover {
+    cursor: pointer;
 }
 
 .link-certificate {
@@ -560,12 +577,16 @@ input[type=radio]:checked+.tab-control {
 
 .div-link-certificate1:hover .fa-arrow-left {
     margin-right: 180px;
-    font-size: 20px;
+    font-size: 17px;
+    /* visibility: visible; */
+    opacity: 1;
 }
 
 .div-link-certificate2:hover .fa-arrow-right {
     margin-left: 180px;
-    font-size: 20px;
+    font-size: 17px;
+    /* visibility: visible; */
+    opacity: 1;
 }
 
 .l1 {
@@ -867,4 +888,274 @@ a .fa-github:hover {
 
 .div-footer p {
     color: grey;
+}
+
+/* responsive untuk hp */
+/* max-width: 1023px */
+@media (max-width: 767px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 67px;
+        z-index: 2;
+        transition: transform 0.3s ease-in-out;
+        /* background-color: rgb(46, 45, 45); */
+        /* background-color: #708090; */
+        background-color: #0a192f;
+    
+    }
+
+    /* a di navigation  */
+    a {
+        text-decoration: none;
+        /* padding: 10px; */
+        /* margin: 14px 30px 0px; */
+        font-weight: bold;
+        font-family: 'roboto mono', sans-serif;
+        font-size: 3vw;
+        margin: 0;
+    }
+
+    /* navigation */
+    nav {
+        position: absolute;
+        right: 0;
+        /* margin: 24px 30px 0px; */
+        margin: 4vw 12vw 0 0;
+    }
+
+
+
+
+
+
+    .medsos {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+    .gmail {
+        display: none;
+    }
+
+
+
+
+
+
+
+    .home {
+        padding: 0 0 0 0;
+        margin: 30vw 0 0 0;
+    }
+
+    .home > p {
+        font-size: 2.5vw;
+        margin: 0 6vw 0 6vw;
+        max-width: 81vw;
+        text-align: justify;
+        line-height: 17px;
+        display: none;
+    }
+
+
+
+
+
+
+
+
+    .section-about-me {
+        padding: 0;
+    }
+
+    .div-about-me {
+        padding: 0;
+        margin: 0;
+    }
+
+    .div-about-me > h1 {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .h1-about-me + p {
+        color: grey;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .div-about-me > p {
+        font-size: 3.5vw;
+        margin: 4vw 3vw 0 3vw;
+    }
+
+    .profile-picture {
+        display: none;
+    }
+
+
+
+
+    .section-portfolio {
+        padding: 0;
+    }
+
+    
+    .div2-title-portfolio > p {
+        display: none;
+    }
+
+    .div2-title-portfolio > h1 {
+        margin: 15vw 0 0 0;
+        padding: 0;
+        font-size: 6vw;
+    }
+    
+    .div1-title-portfolio  {
+        margin: 0 0 0 3vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div1-title-portfolio > p{
+        max-width: 50vw;
+        margin: 0;
+    }
+
+    .tabs {
+        text-align: center;
+    }
+
+    .tab1{
+        margin-left: 2vw;
+    }
+
+    .tab-panel {
+        width: 100%;
+    }
+
+    .tab-control {
+        display: inline-block;
+        border-bottom: 2px solid transparent;
+        font-size: 2.4vw;
+        padding: 0.6rem 1rem;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        background-color: grey;
+        /* border-radius: 4px; */
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        font-family: 'Roboto', serif;
+    }
+
+    .excel-content,
+    .div-power-bi {
+        background-color: #112240;
+        /* padding: 40px; */
+        max-width: 377px;
+        /* margin-left: 160px; */
+        border-radius: 4px;
+        margin: 0 0 0 0;
+    }
+
+    /* image dari tab panel  */
+    .tab-panel img {
+        width: 250px;
+        height: 200px;
+        border: 10px solid grey;
+        /* margin-right: 40px; */
+        margin: 2vw 0 0 0;
+    }
+
+    .python-portfolio-p {
+        text-align: justify;
+        max-width: 65vw;
+        margin: 0 0 0 0;
+    }
+
+    ul {
+        text-align: left;
+    }
+
+    .div-li-portfolio {
+        padding: 0;
+    }
+
+    .p-link-power-bi {
+        margin: 0;
+    }
+
+
+
+
+    .h1-achievement {
+        font-size: 6vw;        
+        margin: 5vw 0 0 3vw;
+    }
+
+    .certificate-content2 {
+        margin-top: 13vw;
+    }
+
+    .certificate-image1 img {
+        width: 75vw;
+        height: 65vw;
+        border-radius: 4px;
+    }
+
+    .certificate-image2 img {
+        width: 75vw;
+        height: 65vw;
+        border-radius: 4px;
+    }
+
+    .certificate-description1 {
+        display: none;
+    }
+
+    .certificate-description2 {
+        display: none;
+    }
+
+    .certificate-image1 {
+        margin: 0;
+    }
+
+    .certificate-image2 {
+        margin: 0;
+    }
+
+
+
+    .div-contact-main > p {
+        margin: 0 0 0 8vw;
+        max-width: 80vw;
+    }
+
+    .div-button-contact {
+        padding: 8vw 0 0 0 ;
+    }
+
+
+
+
+
+    .ilustration1,
+    .ilustration2 {
+        display: none;
+    }
+
+    .contact {
+        padding: 0;
+    }
 }
